@@ -1,0 +1,10 @@
+{
+    "service": {
+      "name": "dockerapi",
+      "port": 3030,
+      "check": {
+        "args": ["curl", "localhost:3030/health"],
+        "interval": "15s"
+      }
+    }
+  }
