@@ -21,19 +21,19 @@ docker.buildImage({
 ```
 ```javascript
 docker.run(
-	'my_image_name',
-	['npm', 'start'],
-	process.stdout,
-	{
-		name: 'my-container-name',
-		HostConfig: {
-            AutoRemove: true,
-            NetworkMode: "host"
-        }
-	},
-	function(err, data, container) {
-		// Do stuff
-	}
+  'my_image_name',
+  ['npm', 'start'],
+  process.stdout,
+  {
+    name: 'my-container-name',
+    HostConfig: {
+      AutoRemove: true,
+      NetworkMode: "host"
+    }
+  },
+  function(err, data, container) {
+    // Do stuff
+  }
 );
 ```
 ```javascript
